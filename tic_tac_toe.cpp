@@ -6,7 +6,7 @@ using namespace std;
 int sum(int a, int b, int c) {
     return a + b + c;
 }
-
+//Create the Tic-Tac-Toe Board
 void printBoard(const vector<int>& xState, const vector<int>& zState) {
     cout << (xState[0] ? 'X' : (zState[0] ? 'O' : '0')) << " | "
          << (xState[1] ? 'X' : (zState[1] ? 'O' : '1')) << " | "
@@ -20,7 +20,7 @@ void printBoard(const vector<int>& xState, const vector<int>& zState) {
          << (xState[7] ? 'X' : (zState[7] ? 'O' : '7')) << " | "
          << (xState[8] ? 'X' : (zState[8] ? 'O' : '8')) << endl;
 }
-
+//Check if X wins or O.
 int checkwin(const vector<int>& xState, const vector<int>& zState) {
     vector<vector<int>> xwins = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
 
