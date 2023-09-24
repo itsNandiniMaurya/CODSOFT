@@ -1,3 +1,4 @@
+/*Simple calculator*/
 #include <iostream>
 using namespace std;
 
